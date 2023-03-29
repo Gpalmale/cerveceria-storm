@@ -217,7 +217,7 @@ body {
 
 
 .contenedor {
-    width: 90%;
+    width: 100%;
     max-width: 1000px;
     margin: 20px auto;
     display: grid;
@@ -259,7 +259,7 @@ body {
 }
 
 .contenedor .header {
-    background: #12203E;
+    background: darkgray;
     color: #fff;
     grid-area: header;
     position: relative;
