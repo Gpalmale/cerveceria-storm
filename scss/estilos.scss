@@ -1,4 +1,7 @@
-
+@use "./Partials/banner";
+@use "./Partials/contacto";
+@use "./Partials/Tienda";
+@use "./Partials/Nosotros";
 
 $color_1: rgb(6, 6, 7);
 $color_2: white;
@@ -41,30 +44,7 @@ body {
 		padding: 20px;
 		border-radius: 4px;
 	}
-	.header {
-		color: $color_2;
-		background-color: $background-color_2;
-		padding: 20px;
-		border-radius: 4px;
-		background: darkgray;
-		color: $color_3;
-		grid-area: header;
-		position: relative;
-		display: inline-block;
-		text-align: center;
-		.texto-encima {
-			position: absolute;
-			top: 10px;
-			left: 10px;
-		}
-		.centrado {
-			color: $color_4;
-			position: absolute;
-			top: 50%;
-			left: 50%;
-			transform: translate(-50%, -50%);
-		}
-	}
+	
 	.contenido {
 		color: $color_2;
 		background-color: $background-color_2;
@@ -123,49 +103,3 @@ h2 {
 		grid-template-areas: "header header header" "contenido contenido contenido" "sidebar sidebar sidebar" "footer footer footer";
 	}
 }
-/*descrpcion banner*/
-.banner {
-    position: relative;
-    height: 500px;
-    overflow: hidden;
-    img {
-      position: absolute;
-      top: 0;
-      left: 50%;
-      transform: translateX(-50%);
-      width: 100%;
-      height: auto;
-      z-index: -1;
-    }
-    .banner-content {
-      position: absolute;
-      top: 50%;
-      left: 50%;
-      transform: translate(-50%, -50%);
-      text-align: center;
-      color: white;
-      z-index: 1;
-      h1 {
-        font-size: 48px;
-        margin-bottom: 16px;
-      }
-      p {
-        font-size: 24px;
-        margin-bottom: 32px;
-      }
-      a {
-        display: inline-block;
-        padding: 16px 32px;
-        border-radius: 4px;
-        background-color: #f9a11b;
-        color: white;
-        font-size: 20px;
-        text-decoration: none;
-        transition: background-color 0.2s ease-in-out;
-        &:hover {
-          background-color: #f7941d;
-        }
-      }
-    }
-  }
-@import "./Partials/banner";

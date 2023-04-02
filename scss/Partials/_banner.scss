@@ -1,0 +1,45 @@
+/*descrpcion banner*/
+.banner {
+    position: relative;
+    height: 500px;
+    overflow: hidden;
+    img {
+      position: absolute;
+      top: 0;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 100%;
+      height: auto;
+      z-index: -1;
+    }
+    .banner-content {
+      position: relative;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      text-align: center;
+      color: white;
+      z-index: 1;
+      h1 {
+        font-size: 48px;
+        margin-bottom: 16px;
+      }
+      p {
+        font-size: 24px;
+        margin-bottom: 32px;
+      }
+      a {
+        display: inline-block;
+        padding: 16px 32px;
+        border-radius: 4px;
+        background-color: #f9a11b;
+        color: white;
+        font-size: 20px;
+        text-decoration: none;
+        transition: background-color 0.2s ease-in-out;
+        &:hover {
+          background-color: #f7941d;
+        }
+      }
+    }
+  }

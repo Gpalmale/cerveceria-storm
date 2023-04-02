@@ -1,0 +1,59 @@
+$color1: #f2f2f2;
+$color2: #fff;
+$color3: #007bff;
+$color4: #333;
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  color: $color4;
+  background-color: $color2;
+}
+
+.wrapper {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: $color1;
+}
+
+.contact-form {
+  flex: 1;
+  max-width: 400px;
+  margin-right: 50px;
+  padding: 20px;
+  background-color: $color2;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+  h2 {
+    margin-top: 0;
+    font-size: 24px;
+    text-align: center;
+    color: $color3;
+  }
+  form {
+    margin-top: 20px;
+    label {
+      display: block;
+      margin-bottom: 5px;
+      color: $color4;
+    }
+    input[type="text"],
+    input[type="email"],
+    textarea {
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 20px;
+     
