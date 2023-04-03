@@ -1,9 +1,12 @@
 @use "./Partials/banner";
+@use "./Partials/contenedor";
 @use "./Partials/contacto";
 @use "./Partials/Tienda";
 @use "./Partials/Nosotros";
+@use "./Partials/carrusel";
 
-$color_1: rgb(6, 6, 7);
+
+/*$color_1: rgb(6, 6, 7);
 $color_2: white;
 $color_3: #fff;
 $color_4: rgb(34, 33, 33);
@@ -11,15 +14,18 @@ $font-family_1: Arial, Helvetica, sans-serif;
 $background-color_1: darkgrey;
 $background-color_2: rgba(66, 65, 65, 0.747);
 
+
 * {
 	margin: 0;
 	padding: 0s;
+	box-sizing: border-box;
 }
 body {
 	color: $color_1;
 	background-attachment: fixed;
 	background-size: cover;
 	box-sizing: border-box;
+	background-image: $background-image_1;
 	background-color: $background-color_1;
 	font-family: $font-family_1;
 	font-size: 18px;
@@ -29,77 +35,12 @@ body {
 	width: 30%;
 	height: 30%;
 }
-.contenedor {
-	width: 100%;
-	max-width: 1000px;
-	margin: 20px auto;
-	display: grid;
-	gap: 20px;
-	grid-template-columns: repeat(3, 1fr);
-	grid-template-rows: repeat(4, auto);
-	grid-template-areas: "header header header" "contenido contenido sidebar" "footer footer footer";
-	>div {
-		color: $color_2;
-		background-color: $background-color_2;
-		padding: 20px;
-		border-radius: 4px;
-	}
-	
-	.contenido {
-		color: $color_2;
-		background-color: $background-color_2;
-		padding: 20px;
-		border-radius: 4px;
-		grid-area: contenido;
-	}
-	.sidebar {
-		color: $color_2;
-		background-color: $background-color_2;
-		padding: 20px;
-		border-radius: 4px;
-		grid-column: 3 / 4;
-		background: #000;
-		text-align: center;
-		display: flex;
-		align-items: center;
-		justify-content: center;
-		min-height: 100px;
-		grid-area: sidebar;
-		img {
-			object-fit: contain;
-			width: 100%;
-			height: 100%;
-		}
-	}
-	.footer {
-		color: $color_2;
-		background-color: $background-color_2;
-		padding: 20px;
-		border-radius: 4px;
-		background: #909296;
-		color: $color_3;
-		grid-area: footer;
-		top: 50%;
-		left: 50%;
-	}
-}
-.variedades {
-	width: 90%;
-	max-width: 1000px;
-	margin: 20px auto;
-	display: grid;
-	gap: 20px;
-	grid-template-columns: repeat(3, 1fr);
-	grid-template-rows: repeat(4, auto);
-	grid-template-areas: "header header header" "contenido contenido contenido" "footer footer footer";
-}
-h2 {
-	object-fit: cover;
-	width: 100%;
-	height: 100%;
-}
+*/
+
 @media screen and (max-width: 768px) {
 	.contenedor {
-		grid-template-areas: "header header header" "contenido contenido contenido" "sidebar sidebar sidebar" "footer footer footer";
+		grid-template-areas: "banner banner bannerSSS" 
+		"contenido contenido contenido" 
+		"sidebar sidebar sidebar" "footer footer footer";
 	}
 }

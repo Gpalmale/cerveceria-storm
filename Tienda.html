@@ -8,61 +8,94 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
     <link rel="stylesheet" href="scss/estilos.css">
 
+<!--navbar-->
+<nav class="navbar navbar-expand-lg bg-body-tertiary">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="index.html"><img class="logo1" src="IMAGENES/logo Cerveza.jpg" alt=""></a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNavDropdown">
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="index.html">Inicio</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="variedades.html">Variedades</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="Tienda.html">Tienda</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Más
+          </a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="Nosotros.html">Nosotros</a></li>
+            <li><a class="dropdown-item" href="Contacto.html">Contacto</a></li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
 
 </head>
 <body>
-    <nav class="navbar navbar-expand-lg bg-body-tertiary">
-        <div class="container-fluid">
-          <a class="navbar-brand" href="index.html"><img class="logo1" src="IMAGENES/logo Cerveza.jpg" alt=""></a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarNavDropdown">
-            <ul class="navbar-nav">
-              <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="index.html">Inicio</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="variedades.html">Variedades</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="Tienda.html">Tienda</a>
-              </li>
-              <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                  Más
-                </a>
-                <ul class="dropdown-menu">
-                  <li><a class="dropdown-item" href="Nosotros.html">Nosotros</a></li>
-                  <li><a class="dropdown-item" href="Contacto.html">Contacto</a></li>
-                </ul>
-              </li>
-            </ul>
-          </div>
-        </div>
-      </nav>
+  <header>
+<h1>Tienda</h1>
+<div class="container-icon"> 
+  <svg 
+  xmlns="http://www.w3.org/2000/svg" 
+  fill="none" 
+  viewBox="0 0 24 24" 
+  stroke-width="1.5" 
+  stroke="currentColor" 
+  class="icon_cart"
+  >
 
+    <path 
+    stroke-linecap="round" 
+    stroke-linejoin="round"
+    d="M15.75 10.5V6a3.75 3.75 0 10-7.5 0v4.5m11.356-1.993l1.263 12c.07.665-.45 1.243-1.119 1.243H4.25a1.125 1.125 0 01-1.12-1.243l1.264-12A1.125 1.125 0 015.513 7.5h12.974c.576 0 1.059.435 1.119 1.007zM8.625 10.5a.375.375 0 11-.75 0 .375.375 0 01.75 0zm7.5 0a.375.375 0 11-.75 0 .375.375 0 01.75 0z" />
+    </svg>
+  
+</div>
+  </header>
+<div class="container-items">
+<div class="item">
+  <figure><img src="./IMAGENES/imagen tienda/amber.jpg" 
+    alt="Producto">
+  </figure>
+  <div class="info_product">
+    <h3>Amber Ale</h3>
+    <p class="price">$ 1.700</p>
+    <button>Añadir al Carrito</button>
 
-      <main>
-        <section class="product">
-          <img src="product1.jpg" alt="Product 1">
-          <h2>Producto 1</h2>
-          <p class="price">$10.00</p>
-          <button class="add-to-cart">Agregar al carrito</button>
-        </section>
-        <section class="product">
-          <img src="product2.jpg" alt="Product 2">
-          <h2>Producto 2</h2>
-          <p class="price">$15.00</p>
-          <button class="add-to-cart">Agregar al carrito</button>
-        </section>
-        <section class="product">
-          <img src="product3.jpg" alt="Product 3">
-          <h2>Producto 3</h2>
-          <p class="price">$20.00</p>
-          <button class="add-to-cart">Agregar al carrito</button>
-        </section>
-      </main>
+  </div>
+  <div class="item">
+    <figure><img src="./IMAGENES/imagen tienda/GoldenB.jfif" 
+      alt="Producto">
+    </figure>
+    <div class="info_product">
+      <h3>Golden Ale</h3>
+      <p class="price">$ 1.700</p>
+      <button>Añadir al Carrito</button>
+  
+    </div>
+    <div class="item">
+      <figure><img src="./IMAGENES/imagen tienda/porter.jfif" 
+        alt="Producto">
+      </figure>
+      <div class="info_product">
+        <h3>Porter Ale</h3>
+        <p class="price">$ 1.700</p>
+        <button>Añadir al Carrito</button>
+    
+      </div>
+</div>
+
+</div>
 
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
