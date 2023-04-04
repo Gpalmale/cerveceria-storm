@@ -1,17 +1,8 @@
-@use "./Partials/banner";
-@use "./Partials/contenedor";
-@use "./Partials/contacto";
+@import "./Partials/inicial";
+@import "./Partials/banner";
+@import "./Partials/contenedor";
+@import "./Partials/contacto";
 @import "./Partials/Tienda";
-@use "./Partials/Nosotros";
+@import "./Partials/Nosotros";
 @import "./Partials/carrusel";
-
-
-
-
-@media screen and (max-width: 768px) {
-	.contenedor {
-		grid-template-areas: "banner banner bannerSSS" 
-		"contenido contenido contenido" 
-		"sidebar sidebar sidebar" "footer footer footer";
-	}
-}
+@import "./Partials/responsive";

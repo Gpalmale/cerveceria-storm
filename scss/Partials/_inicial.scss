@@ -1,0 +1,28 @@
+$color_1: rgb(6, 6, 7);
+$color_2: white;
+$color_3: #fff;
+$color_4: rgb(34, 33, 33);
+$font-family_1: Arial, Helvetica, sans-serif;
+$background-color_1: darkgrey;
+$background-color_2: rgba(66, 65, 65, 0.747);
+
+
+* {
+    margin: 0;
+    padding: 0s;
+    box-sizing: border-box;
+}
+body {
+    color: $color_1;
+    background-attachment: fixed;
+    background-size: cover;
+    box-sizing: border-box;
+    background-color: $background-color_1;
+    font-family: $font-family_1;
+    font-size: 18px;
+}
+.logo1 {
+    object-fit: cover;
+    width: 30%;
+    height: 30%;
+}

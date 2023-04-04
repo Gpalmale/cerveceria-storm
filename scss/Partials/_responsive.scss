@@ -1,0 +1,7 @@
+@media screen and (max-width: 768px) {
+	.contenedor {
+		grid-template-areas: "banner banner banner" 
+		"contenido contenido contenido" 
+		"sidebar sidebar sidebar" "footer footer footer";
+	}
+}
