@@ -1,8 +1,10 @@
+
+
 $color_1: white;
 $font-family_1: Arial, sans-serif;
-$background-color_1: grey;
+$background-color_1: rgb(20, 18, 18);
 $background-color_2: white;
-$background-color_3: darkgrey;
+$background-color_3: rgb(12, 11, 11);
 $background-color_4: darken($background-color_1, 10%);
 
 body {
@@ -28,7 +30,7 @@ header{
   padding: 30px 0 40px 0;
 }
 
-/*main*/
+main
 .container-items {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -38,9 +40,7 @@ header{
 
 .item {
   border-radius: 10px;
-  &hover{ 
-    box-shadow: 0 10px 20px;
-  }
+  
 }
 
 item:hover{
@@ -91,3 +91,4 @@ info-product {
   cursor: pointer;
 
 }
+

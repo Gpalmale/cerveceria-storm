@@ -1,23 +1,40 @@
-$primary-color: #007bff;
-$secondary-color: #333;
-$background-color: #f2f2f2;
-$font-family: Arial, sans-serif;
-$main-width: 800px;
-
-* {
-  box-sizing: border-box;
-}
-
-html,
-body {
-  height: 100%;
-}
-
-body {
-  margin: 0;
-  font-family: $font-family;
-  font-size: 16px;
-  line-height: 1.5;
-  color: $secondary-color;
-  background-color: $background-color;
+main {
+  padding: 20px;
+  .hero {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+    .hero-content {
+      max-width: 50%;
+      h5 {
+        font-size: 36px;
+        margin-bottom: 10px;
+      }
+      p {
+        font-size: 18px;
+      }
+    }
+    img {
+      max-width: 50%;
+    }
+  }
+  section {
+    margin-bottom: 20px;
+    h2 {
+      font-size: 24px;
+      margin-bottom: 10px;
+    }
+    .video-wrapper {
+      position: relative;
+      padding-bottom: 56.25%;
+      iframe {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+      }
+    }
+  }
 }
